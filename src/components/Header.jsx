@@ -24,10 +24,10 @@ export const Header = () => {
       </h1>
       <div className='grid grid-flow-col gap-[1rem]'>
         <NavBar menu={menu} />
-        <button onClick={handleTheme}>
+        <button aria-label='change theme from dark to light' onClick={handleTheme}>
           <BiSun className='text-textLight w-[1.5rem] h-[1.5rem] dark:text-textDark' />
         </button>
-        <button className='sm:hidden' onClick={() => menu === 'hidden' ? setMenu('show') : setMenu('hidden')}>
+        <button aria-label='show menu' className='sm:hidden' onClick={() => menu === 'hidden' ? setMenu('show') : setMenu('hidden')}>
           <BiMenu className='text-textLight w-[1.7rem] h-[1.7rem] dark:text-textDark' />
         </button>
       </div>
