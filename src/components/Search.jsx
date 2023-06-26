@@ -7,7 +7,7 @@ export const Search = ({ placeholder, handleChange }) => {
   return (
     <div className='w-max grid grid-flow-col items-center gap-[.5rem]'>
       <BiSearchAlt2 className='text-textLight dark:text-textDark' />
-      <input onChange={handleChange} type='text' placeholder={placeholder} className='outline-none font-raleway placeholder-placeholder border-b-[.1rem] border-textLight text-textLight dark:text-textDark dark:border-textDark bg-transparent' />
+      <input onChange={handleChange} aria-label='find character' type='search' placeholder={placeholder} className='outline-none font-raleway placeholder-placeholder border-b-[.1rem] border-textLight text-textLight dark:text-textDark dark:border-textDark bg-transparent' />
     </div>
   )
 }
