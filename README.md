@@ -9,9 +9,9 @@ This project was created as a way to showcase my web development skills. The pro
 
 - [react-paginate](https://www.npmjs.com/package/react-paginate)
 - [react-icons](https://www.npmjs.com/package/react-icons)
+- [React Router Dom](https://www.npmjs.com/package/reactrouter-dom)
 
 ## DevDependencies
 
 - [EsLint](https://www.npmjs.com/package/eslint)
 - [Standard](https://www.npmjs.com/package/standard)
-- [React Router Dom](https://www.npmjs.com/package/reactrouter-dom)
