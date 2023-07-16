@@ -10,7 +10,7 @@ export const Card = ({ img, name, location, specie, state }) => {
         <h2 className='break-words max-w-[370px] font-raleway text-lg font-[600] flex gap-[.5rem] justify-between items-start text-textLight dark:text-textDark'>
           {name}
           <span className='flex items-center gap-2 text-base'>
-            <BsFillCircleFill className={state === 'Dead' ? 'w-[.5rem] h-[.5rem] text-dead' : state === 'Alive' ? 'w-[.5rem] h-[.5rem] text-alive' : 'w-[.5rem] h-[.5rem]'} />
+            <BsFillCircleFill aria-hidden='true' className={state === 'Dead' ? 'w-[.5rem] h-[.5rem] text-dead' : state === 'Alive' ? 'w-[.5rem] h-[.5rem] text-alive' : 'w-[.5rem] h-[.5rem]'} />
             {state}
           </span>
         </h2>
