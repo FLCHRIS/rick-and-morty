@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://gorgeous-rugelach-84c13d.netlify.app/sitemap.xml
