@@ -4,7 +4,7 @@ import { NavBar } from './NavBar'
 import { BiMenu, BiSun } from 'react-icons/bi'
 
 export const Header = () => {
-  const [menu, setMenu] = useState('hidden')
+  const [menu, setMenu] = useState(false)
   const [dark, setDark] = useState('')
 
   const handleTheme = () => {
@@ -25,10 +25,10 @@ export const Header = () => {
       <div className='grid grid-flow-col gap-[1rem]'>
         <NavBar menu={menu} />
         <button aria-label='change theme from dark to light' onClick={handleTheme}>
-          <BiSun className='text-textLight w-[1.5rem] h-[1.5rem] dark:text-textDark' />
+          <BiSun aria-hidden='true' className='text-textLight w-[1.5rem] h-[1.5rem] dark:text-textDark' />
         </button>
-        <button aria-label='show menu' className='sm:hidden' onClick={() => menu === 'hidden' ? setMenu('show') : setMenu('hidden')}>
-          <BiMenu className='text-textLight w-[1.7rem] h-[1.7rem] dark:text-textDark' />
+        <button aria-expanded={menu} aria-controls='menu-list' aria-label='show menu' className='sm:hidden' onClick={() => menu === false ? setMenu(true) : setMenu(false)}>
+          <BiMenu aria-hidden='true' className='text-textLight w-[1.7rem] h-[1.7rem] dark:text-textDark' />
         </button>
       </div>
     </header>
